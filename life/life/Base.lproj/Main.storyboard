@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina3_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,371 +13,318 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="life" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rC8-rk-nuE">
-                                <rect key="frame" x="430" y="146" width="33" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Og-yP-6mY">
+                                <rect key="frame" x="59" y="240" width="370" height="80"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="BJg-Ib-c3r"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIz-IB-Pme">
-                                <rect key="frame" x="381" y="142" width="30" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="-">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="singleSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Al-zZ-JBg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2R-oI-jDR">
-                                <rect key="frame" x="486" y="142" width="30" height="40"/>
-                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="+">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="singleAdditionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qyx-Su-iXR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Au-SF-YXe">
-                                <rect key="frame" x="537" y="142" width="30" height="40"/>
-                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="+5">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="fiveAddtionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SCV-HW-UBG"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjc-gj-hIn">
-                                <rect key="frame" x="54" y="148" width="459.5" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YK-vb-aX9">
-                                <rect key="frame" x="54" y="195" width="470" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQx-rk-VK2">
-                                <rect key="frame" x="54" y="241" width="470" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yb2-jN-FE0">
-                                <rect key="frame" x="381" y="235" width="30" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic the Gathering: LifeCounter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cc5-8P-hH5">
+                                <rect key="frame" x="45" y="10" width="390" height="74"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="FcN-Le-ZUd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="-">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="singleSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Qp-vc-qlz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoH-ZT-Ua8">
-                                <rect key="frame" x="486" y="235" width="30" height="40"/>
-                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="+">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="singleAdditionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7zu-Kf-zWi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1G-g9-hDx">
-                                <rect key="frame" x="539" y="235" width="30" height="40"/>
-                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="BFb-yh-6ph"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="+5">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="fiveAddtionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N6V-wl-IgT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZi-oJ-JVK">
-                                <rect key="frame" x="322" y="235" width="30" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="Ige-Cm-lw7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="-5">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="fiveSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SBb-zt-CJJ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GY-nB-RMj">
-                                <rect key="frame" x="430" y="193" width="33" height="32.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lX-Aj-VmS">
-                                <rect key="frame" x="486" y="187" width="30" height="40"/>
-                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="+">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="singleAdditionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LyF-RQ-cZS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlG-dQ-Dpk">
-                                <rect key="frame" x="537" y="187" width="30" height="40"/>
-                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="+5">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="fiveAddtionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Slk-Mm-psZ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic the Gathering: LifeCounter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cc5-8P-hH5">
-                                <rect key="frame" x="246" y="27" width="404" height="33.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="cc5-8P-hH5" secondAttribute="height" multiplier="398:33" id="gqP-cn-cYc"/>
+                                    <constraint firstAttribute="height" constant="74" id="68V-Gt-7fh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbD-D7-2VY">
-                                <rect key="frame" x="325" y="142" width="30" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="-5">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="fiveSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EHT-Zm-WQD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fH-3g-a5j">
-                                <rect key="frame" x="381" y="187" width="30" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="-">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="singleSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GjU-AQ-ByE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNx-gk-ntu">
-                                <rect key="frame" x="381" y="94" width="30" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="XU4-pn-NSf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="-">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="singleSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XSA-8h-VF8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRg-4V-X9I">
-                                <rect key="frame" x="486" y="94" width="30" height="40"/>
-                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="PdL-xG-Apb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="+">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="singleAdditionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hLW-da-e0m"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohC-PZ-obP">
-                                <rect key="frame" x="537" y="94" width="30" height="40"/>
-                                <color key="backgroundColor" red="0.66544725376480862" green="1" blue="0.65476445479813172" alpha="0.64869513479219809" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="1RP-Rd-dkO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="+5">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="fiveAddtionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K61-5E-2K3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isr-U8-L7U">
-                                <rect key="frame" x="325" y="94" width="30" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.48476400074770265" blue="0.47330940211237538" alpha="0.64869513479219809" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="GOe-hR-rrL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="-5">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="fiveSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ry-cf-jAx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkA-Af-0zt">
-                                <rect key="frame" x="325" y="187" width="30" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="0Rt-2z-qgw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="-5">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="fiveSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mz3-Kp-8z2"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Og-yP-6mY">
-                                <rect key="frame" x="103" y="321" width="698" height="93"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="93" id="D4R-2N-GH3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feS-yS-imA">
-                                <rect key="frame" x="417" y="242" width="59" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edw-mS-2Qg">
-                                <rect key="frame" x="50" y="100" width="478" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="76" id="BIs-Qe-3cO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0k-Ex-Vod">
-                                <rect key="frame" x="430" y="95" width="32.5" height="32.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xsD-R7-NY0">
+                                <rect key="frame" x="124.5" y="74" width="231.5" height="172"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="d4l-s0-ucB">
+                                        <rect key="frame" x="0.0" y="0.0" width="66.5" height="172"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edw-mS-2Qg">
+                                                <rect key="frame" x="0.0" y="0.0" width="66.5" height="50.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="rjc-gj-hIn">
+                                                <rect key="frame" x="0.0" y="54.5" width="66.5" height="40.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40.333333333333343" id="NkL-TO-Bn2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="9YK-vb-aX9">
+                                                <rect key="frame" x="0.0" y="99" width="66.5" height="34.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34.333333333333343" id="tCi-tF-IyV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="wQx-rk-VK2">
+                                                <rect key="frame" x="0.0" y="137.5" width="66.5" height="34.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34.666666666666671" id="bTZ-Rh-Nys"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Rwz-tY-hTe">
+                                        <rect key="frame" x="70.5" y="0.0" width="30" height="172"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isr-U8-L7U">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.48476400074770265" blue="0.47330940211237538" alpha="0.64869513479219809" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="-5">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fiveSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ry-cf-jAx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbD-D7-2VY">
+                                                <rect key="frame" x="0.0" y="44" width="30" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="-5">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fiveSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EHT-Zm-WQD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkA-Af-0zt">
+                                                <rect key="frame" x="0.0" y="88" width="30" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="-5">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fiveSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mz3-Kp-8z2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZi-oJ-JVK">
+                                                <rect key="frame" x="0.0" y="132" width="30" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="-5">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fiveSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SBb-zt-CJJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="md9-1y-BOR">
+                                        <rect key="frame" x="104.5" y="0.0" width="30" height="172"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNx-gk-ntu">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="singleSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XSA-8h-VF8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIz-IB-Pme">
+                                                <rect key="frame" x="0.0" y="44" width="30" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="singleSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Al-zZ-JBg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fH-3g-a5j">
+                                                <rect key="frame" x="0.0" y="88" width="30" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="singleSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GjU-AQ-ByE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yb2-jN-FE0">
+                                                <rect key="frame" x="0.0" y="132" width="30" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="singleSubtractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Qp-vc-qlz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Bbs-Mi-QY7">
+                                        <rect key="frame" x="138.5" y="0.0" width="25" height="172"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0k-Ex-Vod">
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="47.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rC8-rk-nuE">
+                                                <rect key="frame" x="0.0" y="51.5" width="25" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="jHQ-tP-2JM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GY-nB-RMj">
+                                                <rect key="frame" x="0.0" y="99.5" width="25" height="43"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="43" id="eap-ZH-itn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feS-yS-imA">
+                                                <rect key="frame" x="0.0" y="146.5" width="25" height="25.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25.333333333333343" id="gXE-HC-mpP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Qhe-Ef-tAa">
+                                        <rect key="frame" x="167.5" y="0.0" width="30" height="172"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRg-4V-X9I">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
+                                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="singleAdditionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hLW-da-e0m"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2R-oI-jDR">
+                                                <rect key="frame" x="0.0" y="44" width="30" height="40"/>
+                                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="singleAdditionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qyx-Su-iXR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lX-Aj-VmS">
+                                                <rect key="frame" x="0.0" y="88" width="30" height="40"/>
+                                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="singleAdditionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LyF-RQ-cZS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoH-ZT-Ua8">
+                                                <rect key="frame" x="0.0" y="132" width="30" height="40"/>
+                                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="1"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="singleAdditionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7zu-Kf-zWi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mIo-2R-JUX">
+                                        <rect key="frame" x="201.5" y="0.0" width="30" height="172"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohC-PZ-obP">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
+                                                <color key="backgroundColor" red="0.66544725376480862" green="1" blue="0.65476445479813172" alpha="0.64869513479219809" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="+5">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fiveAddtionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K61-5E-2K3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Au-SF-YXe">
+                                                <rect key="frame" x="0.0" y="44" width="30" height="40"/>
+                                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="+5">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fiveAddtionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SCV-HW-UBG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlG-dQ-Dpk">
+                                                <rect key="frame" x="0.0" y="88" width="30" height="40"/>
+                                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="+5">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fiveAddtionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Slk-Mm-psZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1G-g9-hDx">
+                                                <rect key="frame" x="0.0" y="132" width="30" height="40"/>
+                                                <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="+5">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fiveAddtionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N6V-wl-IgT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3fH-3g-a5j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-52" id="0Dr-Z7-LBg"/>
-                            <constraint firstItem="1GY-nB-RMj" firstAttribute="top" secondItem="rC8-rk-nuE" secondAttribute="bottom" constant="14" id="19M-PQ-aqz"/>
-                            <constraint firstItem="uNx-gk-ntu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-93" id="26S-V2-JPV"/>
-                            <constraint firstItem="ohC-PZ-obP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="104" id="2O5-oj-6PY"/>
-                            <constraint firstItem="edw-mS-2Qg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="2Vm-Vd-3r9"/>
-                            <constraint firstItem="1lX-Aj-VmS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="53" id="31m-2G-Gdx"/>
-                            <constraint firstItem="1GY-nB-RMj" firstAttribute="width" secondItem="fkA-Af-0zt" secondAttribute="width" constant="2.6666666666666572" id="3SF-4G-Byw"/>
-                            <constraint firstItem="fkA-Af-0zt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4mA-r1-dcJ"/>
-                            <constraint firstItem="MlG-dQ-Dpk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="104" id="5H8-ss-5Km"/>
-                            <constraint firstItem="wQx-rk-VK2" firstAttribute="baseline" secondItem="fkA-Af-0zt" secondAttribute="baseline" constant="48" id="5jN-k0-gIN"/>
-                            <constraint firstItem="3fH-3g-a5j" firstAttribute="baseline" secondItem="wbD-D7-2VY" secondAttribute="baseline" constant="45" id="6Pr-2U-EMB"/>
-                            <constraint firstItem="MlG-dQ-Dpk" firstAttribute="width" secondItem="fkA-Af-0zt" secondAttribute="width" id="A7N-aG-PLO"/>
-                            <constraint firstItem="ohC-PZ-obP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-93" id="ABr-eb-4NL"/>
-                            <constraint firstAttribute="bottom" secondItem="5Og-yP-6mY" secondAttribute="bottom" id="AXX-9x-pcY"/>
-                            <constraint firstItem="isr-U8-L7U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-93" id="Adr-nB-0EP"/>
-                            <constraint firstItem="1lX-Aj-VmS" firstAttribute="width" secondItem="fkA-Af-0zt" secondAttribute="width" id="AgT-U8-vPY"/>
-                            <constraint firstItem="cc5-8P-hH5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AuA-sC-Qg2"/>
-                            <constraint firstItem="1GY-nB-RMj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.5" id="Ebx-lG-0hx"/>
-                            <constraint firstItem="rjc-gj-hIn" firstAttribute="leading" secondItem="edw-mS-2Qg" secondAttribute="leading" id="GsL-Af-xZb"/>
-                            <constraint firstItem="1lX-Aj-VmS" firstAttribute="baseline" secondItem="MlG-dQ-Dpk" secondAttribute="baseline" id="JG0-o3-Owg"/>
-                            <constraint firstItem="PoH-ZT-Ua8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="53" id="Jtc-T1-L5e"/>
-                            <constraint firstItem="feS-yS-imA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.5" id="KAL-1S-YHZ"/>
-                            <constraint firstItem="rjc-gj-hIn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="LRl-1V-188"/>
-                            <constraint firstItem="fkA-Af-0zt" firstAttribute="baseline" secondItem="yb2-jN-FE0" secondAttribute="baseline" constant="-48" id="MFS-65-tug"/>
-                            <constraint firstItem="a1G-g9-hDx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="48" id="MbI-hY-JCi"/>
-                            <constraint firstItem="9YK-vb-aX9" firstAttribute="leading" secondItem="edw-mS-2Qg" secondAttribute="leading" id="N7I-FU-tRh"/>
-                            <constraint firstItem="r0k-Ex-Vod" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-95.75" id="NO6-l3-gKu"/>
-                            <constraint firstItem="3fH-3g-a5j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-52" id="O27-F4-CB8"/>
-                            <constraint firstItem="3fH-3g-a5j" firstAttribute="width" secondItem="fkA-Af-0zt" secondAttribute="width" id="OPv-ah-0lr"/>
-                            <constraint firstItem="wbD-D7-2VY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-45" id="Pnt-1c-yeD"/>
-                            <constraint firstItem="MlG-dQ-Dpk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="104" id="Pun-h7-74N"/>
-                            <constraint firstItem="rC8-rk-nuE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-44.5" id="S0E-yp-eNo"/>
-                            <constraint firstItem="aIz-IB-Pme" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-52" id="SGQ-F0-eAY"/>
-                            <constraint firstItem="9YK-vb-aX9" firstAttribute="centerX" secondItem="wQx-rk-VK2" secondAttribute="centerX" id="Sx1-d3-nsd"/>
-                            <constraint firstItem="fkA-Af-0zt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-108" id="TT5-MQ-Gdf"/>
-                            <constraint firstItem="5Og-yP-6mY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="4" id="TVE-Jq-PHv"/>
-                            <constraint firstItem="uNx-gk-ntu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-52" id="Vs7-Yl-6OP"/>
-                            <constraint firstItem="isr-U8-L7U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-108" id="Xlb-vf-1JV"/>
-                            <constraint firstItem="rC8-rk-nuE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.5" id="YYu-rq-Bc1"/>
-                            <constraint firstItem="5Og-yP-6mY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="4" id="ZrU-Xa-5Yf"/>
-                            <constraint firstItem="wQx-rk-VK2" firstAttribute="top" secondItem="9YK-vb-aX9" secondAttribute="bottom" constant="18" id="aF2-Vy-0ge"/>
-                            <constraint firstItem="1Au-SF-YXe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="104" id="ac1-yU-r93"/>
-                            <constraint firstItem="rjc-gj-hIn" firstAttribute="firstBaseline" secondItem="wbD-D7-2VY" secondAttribute="firstBaseline" id="bNw-cF-mLW"/>
-                            <constraint firstItem="1lX-Aj-VmS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="be8-9l-cU5"/>
-                            <constraint firstItem="rjc-gj-hIn" firstAttribute="centerX" secondItem="9YK-vb-aX9" secondAttribute="centerX" constant="-5.25" id="c4y-fe-ps9"/>
-                            <constraint firstItem="5Og-yP-6mY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="cFn-Be-LTZ"/>
-                            <constraint firstItem="yb2-jN-FE0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-52" id="cri-yR-u3Y"/>
-                            <constraint firstItem="r0k-Ex-Vod" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.75" id="dho-gj-Bfh"/>
-                            <constraint firstItem="wbD-D7-2VY" firstAttribute="top" secondItem="edw-mS-2Qg" secondAttribute="bottom" constant="14" id="fdK-BN-ot1"/>
-                            <constraint firstItem="yb2-jN-FE0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="48" id="gEJ-kV-fIJ"/>
-                            <constraint firstItem="1GY-nB-RMj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="2.25" id="gQS-nf-Zv6"/>
-                            <constraint firstItem="fkA-Af-0zt" firstAttribute="baseline" secondItem="PoH-ZT-Ua8" secondAttribute="baseline" constant="-48" id="gyt-Vh-xkW"/>
-                            <constraint firstItem="feS-yS-imA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.5" id="hA6-cG-99a"/>
-                            <constraint firstItem="3fH-3g-a5j" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hDA-bT-My2"/>
-                            <constraint firstItem="PoH-ZT-Ua8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="48" id="hGb-uE-Po1"/>
-                            <constraint firstAttribute="bottom" secondItem="5Og-yP-6mY" secondAttribute="bottom" id="hgO-Dp-jTU"/>
-                            <constraint firstItem="aIz-IB-Pme" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-45" id="hlr-IC-lAx"/>
-                            <constraint firstItem="feS-yS-imA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="51.5" id="ihU-Mc-UtR"/>
-                            <constraint firstItem="DZi-oJ-JVK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="48" id="j6v-Ef-IiC"/>
-                            <constraint firstItem="1lX-Aj-VmS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="53" id="kNY-Z3-VFg"/>
-                            <constraint firstItem="1GY-nB-RMj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.5" id="kcU-4h-s2G"/>
-                            <constraint firstItem="wQx-rk-VK2" firstAttribute="firstBaseline" secondItem="fkA-Af-0zt" secondAttribute="firstBaseline" constant="48" id="kup-7L-Gqs"/>
-                            <constraint firstItem="feS-yS-imA" firstAttribute="leading" secondItem="3fH-3g-a5j" secondAttribute="trailing" constant="6" id="m7U-W6-WFW"/>
-                            <constraint firstItem="wbD-D7-2VY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-108" id="mOZ-dT-stj"/>
-                            <constraint firstItem="cc5-8P-hH5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="27" id="mdh-fi-ddw"/>
-                            <constraint firstItem="HRg-4V-X9I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-93" id="nIt-G5-kGM"/>
-                            <constraint firstItem="rjc-gj-hIn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-164.25" id="nJ8-tY-rtT"/>
-                            <constraint firstItem="rjc-gj-hIn" firstAttribute="baseline" secondItem="wbD-D7-2VY" secondAttribute="baseline" id="oPB-pr-Fh7"/>
-                            <constraint firstItem="fkA-Af-0zt" firstAttribute="baseline" secondItem="a1G-g9-hDx" secondAttribute="baseline" constant="-48" id="orV-sZ-qeF"/>
-                            <constraint firstItem="MlG-dQ-Dpk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pFZ-OA-G79"/>
-                            <constraint firstItem="rjc-gj-hIn" firstAttribute="leading" secondItem="9YK-vb-aX9" secondAttribute="leading" id="pQI-tR-QNu"/>
-                            <constraint firstItem="wQx-rk-VK2" firstAttribute="leading" secondItem="edw-mS-2Qg" secondAttribute="leading" id="qMC-jS-BkY"/>
-                            <constraint firstItem="feS-yS-imA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.5" id="qh2-c2-zb6"/>
-                            <constraint firstItem="3fH-3g-a5j" firstAttribute="baseline" secondItem="1lX-Aj-VmS" secondAttribute="baseline" id="qkf-Mv-wEL"/>
-                            <constraint firstItem="1GY-nB-RMj" firstAttribute="top" secondItem="yb2-jN-FE0" secondAttribute="top" constant="-42" id="rU4-bN-bx8"/>
-                            <constraint firstItem="e2R-oI-jDR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-45" id="rpq-xY-uMv"/>
-                            <constraint firstItem="1GY-nB-RMj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.5" id="se8-Jb-130"/>
-                            <constraint firstItem="1Au-SF-YXe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-45" id="uED-o1-ibK"/>
-                            <constraint firstItem="DZi-oJ-JVK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-111" id="ukT-91-ibm"/>
-                            <constraint firstItem="rC8-rk-nuE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.5" id="v7C-vD-rVJ"/>
-                            <constraint firstItem="HRg-4V-X9I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="53" id="vPO-2o-fII"/>
-                            <constraint firstItem="r0k-Ex-Vod" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.75" id="vV2-rM-aJQ"/>
-                            <constraint firstItem="9YK-vb-aX9" firstAttribute="leading" secondItem="wQx-rk-VK2" secondAttribute="leading" id="vsZ-T1-FaT"/>
-                            <constraint firstItem="a1G-g9-hDx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="106" id="wF4-Aa-MEc"/>
-                            <constraint firstItem="e2R-oI-jDR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="53" id="xuH-a7-0yi"/>
-                            <constraint firstItem="feS-yS-imA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="51.5" id="y20-9M-XTN"/>
-                            <constraint firstItem="edw-mS-2Qg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-159" id="zIc-b6-XgX"/>
-                            <constraint firstItem="fkA-Af-0zt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-108" id="zru-DM-T60"/>
+                            <constraint firstItem="5Og-yP-6mY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="2sg-ny-8TK"/>
+                            <constraint firstItem="cc5-8P-hH5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="9UC-9R-q87"/>
+                            <constraint firstItem="cc5-8P-hH5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="GZl-Cv-QOe"/>
+                            <constraint firstItem="xsD-R7-NY0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vey-uP-nhO"/>
+                            <constraint firstItem="xsD-R7-NY0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c12-BV-YPx"/>
+                            <constraint firstItem="5Og-yP-6mY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rUE-q9-iTt"/>
+                            <constraint firstItem="cc5-8P-hH5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tgQ-yJ-bOl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Og-yP-6mY" secondAttribute="trailing" constant="51" id="weO-eN-1if"/>
                         </constraints>
                     </view>
                     <connections>
@@ -390,7 +337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.23188405797103" y="73.660714285714278"/>
+            <point key="canvasLocation" x="133.33333333333334" y="70.108695652173921"/>
         </scene>
     </scenes>
     <resources>
