@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBEC29822638CB3C00B5EDD2 /* userComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEC29812638CB3C00B5EDD2 /* userComponent.swift */; };
+		DBEC29872638CC9C00B5EDD2 /* userComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBEC29862638CC9C00B5EDD2 /* userComponent.xib */; };
 		DBEF2B852630EAB400700998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF2B842630EAB400700998 /* AppDelegate.swift */; };
 		DBEF2B872630EAB400700998 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF2B862630EAB400700998 /* SceneDelegate.swift */; };
 		DBEF2B892630EAB400700998 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF2B882630EAB400700998 /* ViewController.swift */; };
@@ -15,6 +17,7 @@
 		DBEF2B912630EAB700700998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEF2B8F2630EAB700700998 /* LaunchScreen.storyboard */; };
 		DBEF2B9C2630EAB700700998 /* lifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF2B9B2630EAB700700998 /* lifeTests.swift */; };
 		DBEF2BA72630EAB700700998 /* lifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF2BA62630EAB700700998 /* lifeUITests.swift */; };
+		DBEF2BBE26375C8B00700998 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEF2BBD26375C8B00700998 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DBEC29812638CB3C00B5EDD2 /* userComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userComponent.swift; sourceTree = "<group>"; };
+		DBEC29862638CC9C00B5EDD2 /* userComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = userComponent.xib; sourceTree = "<group>"; };
 		DBEF2B812630EAB400700998 /* life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = life.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEF2B842630EAB400700998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBEF2B862630EAB400700998 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		DBEF2BA22630EAB700700998 /* lifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEF2BA62630EAB700700998 /* lifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifeUITests.swift; sourceTree = "<group>"; };
 		DBEF2BA82630EAB700700998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEF2BBD26375C8B00700998 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,14 @@
 			children = (
 				DBEF2B842630EAB400700998 /* AppDelegate.swift */,
 				DBEF2B862630EAB400700998 /* SceneDelegate.swift */,
+				DBEC29812638CB3C00B5EDD2 /* userComponent.swift */,
+				DBEC29862638CC9C00B5EDD2 /* userComponent.xib */,
 				DBEF2B882630EAB400700998 /* ViewController.swift */,
 				DBEF2B8A2630EAB400700998 /* Main.storyboard */,
 				DBEF2B8D2630EAB700700998 /* Assets.xcassets */,
 				DBEF2B8F2630EAB700700998 /* LaunchScreen.storyboard */,
 				DBEF2B922630EAB700700998 /* Info.plist */,
+				DBEF2BBD26375C8B00700998 /* SwiftUIView.swift */,
 			);
 			path = life;
 			sourceTree = "<group>";
@@ -232,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBEF2B912630EAB700700998 /* LaunchScreen.storyboard in Resources */,
+				DBEC29872638CC9C00B5EDD2 /* userComponent.xib in Resources */,
 				DBEF2B8E2630EAB700700998 /* Assets.xcassets in Resources */,
 				DBEF2B8C2630EAB400700998 /* Main.storyboard in Resources */,
 			);
@@ -258,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBEC29822638CB3C00B5EDD2 /* userComponent.swift in Sources */,
 				DBEF2B892630EAB400700998 /* ViewController.swift in Sources */,
 				DBEF2B852630EAB400700998 /* AppDelegate.swift in Sources */,
+				DBEF2BBE26375C8B00700998 /* SwiftUIView.swift in Sources */,
 				DBEF2B872630EAB400700998 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

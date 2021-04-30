@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lifecounterV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Iv7-L2-juH">
+                                <rect key="frame" x="41" y="103.5" width="332" height="689"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wLu-J5-QHS">
+                                        <rect key="frame" x="0.0" y="0.0" width="332" height="29"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdx-mu-Hec">
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="29"/>
+                                                <state key="normal" title="Subtract Player"/>
+                                                <connections>
+                                                    <action selector="removePerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9KS-OW-GQO"/>
+                                                </connections>
+                                            </button>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="bCP-TD-YSB">
+                                                <rect key="frame" x="81" y="0.0" width="169" height="30"/>
+                                                <connections>
+                                                    <action selector="changeButtonValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="R76-JO-vqx"/>
+                                                </connections>
+                                            </slider>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAT-cm-784">
+                                                <rect key="frame" x="253" y="0.0" width="79" height="29"/>
+                                                <state key="normal" title="Add Person"/>
+                                                <connections>
+                                                    <action selector="addPerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d1E-V8-rIi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QAD-9d-voc">
+                                        <rect key="frame" x="0.0" y="29" width="332" height="636"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2wJ-yR-lbj">
+                                        <rect key="frame" x="0.0" y="665" width="332" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLB-22-Vzn">
+                                                <rect key="frame" x="0.0" y="0.0" width="143.5" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="143.5" id="SJu-y8-oWO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6M-HJ-DXl">
+                                                <rect key="frame" x="148.5" y="0.0" width="183.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="History"/>
+                                                <connections>
+                                                    <segue destination="NG4-Wm-OUo" kind="show" id="qkk-HG-kki"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wLu-J5-QHS" secondAttribute="bottom" constant="660" id="duN-J3-NVe"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Iv7-L2-juH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B93-5D-7uq"/>
+                            <constraint firstItem="Iv7-L2-juH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59.5" id="gA8-7I-ZeZ"/>
+                            <constraint firstItem="Iv7-L2-juH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="jql-xD-CMN"/>
+                            <constraint firstItem="Iv7-L2-juH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rs7-hg-o3F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ddf-8K-rDJ"/>
+                    <connections>
+                        <outlet property="addPlayerButton" destination="vAT-cm-784" id="Zao-M3-w7C"/>
+                        <outlet property="contentView" destination="QAD-9d-voc" id="Xvl-IO-spy"/>
+                        <outlet property="removePlayerButton" destination="Qdx-mu-Hec" id="Mff-hk-Fqd"/>
+                        <outlet property="slider" destination="bCP-TD-YSB" id="lc1-Dc-NTo"/>
+                        <outlet property="statusLabel" destination="HLB-22-Vzn" id="5Hp-ra-hNE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="88.392857142857139"/>
+        </scene>
+        <!--historyView-->
+        <scene sceneID="niK-zl-hgi">
+            <objects>
+                <viewController id="NG4-Wm-OUo" userLabel="historyView" customClass="historyView" customModule="lifecounterV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UO7-fn-iKM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H6f-9t-TZa" customClass="TableViewCell">
+                                <rect key="frame" x="0.0" y="131" width="414" height="649"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableViewCell" id="Ev1-OK-Y0u" customClass="TableViewCell">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ev1-OK-Y0u" id="mrg-9Q-1UV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Hb-FI-Q6y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ayY-Ht-DBP"/>
+                    <connections>
+                        <outlet property="tableView" destination="H6f-9t-TZa" id="gzp-mC-Zgj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ObI-Az-SuH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714.49275362318849" y="104.46428571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

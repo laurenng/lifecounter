@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="userComponent" customModule="life" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="sn7-fG-0Wg"/>
+                <outlet property="label" destination="7ji-TN-2UP" id="E2m-iw-o7y"/>
+                <outlet property="plusButton" destination="VX8-QE-oLb" id="o0p-Su-Nvc"/>
+                <outlet property="xib" destination="iN0-l3-epB" id="mqh-Jm-Twy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="default" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ji-TN-2UP">
+                    <rect key="frame" x="86" y="44" width="69" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIf-G0-aCJ">
+                    <rect key="frame" x="7" y="85" width="59" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <state key="normal" title="-5">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="fiveSubtractionButton:" destination="-2" eventType="touchUpInside" id="uFI-iM-Tvv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tw2-Ca-VJK">
+                    <rect key="frame" x="74" y="85" width="58" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.48476400069999998" blue="0.4733094021" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <state key="normal" title="-">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonTap:" destination="-1" eventType="touchUpInside" id="bLI-gH-irF"/>
+                        <action selector="singleSubtractionButton:" destination="-2" eventType="touchUpInside" id="zqn-cg-eto"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tce-jj-r97">
+                    <rect key="frame" x="182" y="46" width="25" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VX8-QE-oLb">
+                    <rect key="frame" x="140" y="85" width="67" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="singleAdditionButton:" destination="-2" eventType="touchUpInside" id="1OE-Rq-Ok3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeF-cj-LYm">
+                    <rect key="frame" x="215" y="85" width="78" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.66544725380000003" green="1" blue="0.65476445480000001" alpha="0.64869513479999996" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <state key="normal" title="+5">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="fiveAddtionButton:" destination="-2" eventType="touchUpInside" id="Meq-aK-qSh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="plusButton" destination="VX8-QE-oLb" id="ALK-Q0-K7N"/>
+                <outlet property="textLabel" destination="7ji-TN-2UP" id="qEB-rm-Xme"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
